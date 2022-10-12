@@ -1,7 +1,15 @@
 package com.payingguests.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class PayingGuest {
+	@Id
+	@Column(name="pgId")
 	private Integer payingGuestId;
+	@Column(name="pgName")
 	private String payingGuestName;
 	private String location;
 	private String category;
@@ -57,4 +65,3 @@ public class PayingGuest {
 	}
 
 }
-
