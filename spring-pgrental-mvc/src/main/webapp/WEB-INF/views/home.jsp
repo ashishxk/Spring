@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +7,9 @@
 <title>Home</title>
 </head>
 <body>
-<a href="admin">Admin Page</a>
-	<br/>
-	<h2>All paying Guests:</h2>
-	${payingGuests}
-	
+	<div style="text-align: right">
+		<a href="admin">Admin Page</a>
+	</div>
 	<h2>Search by category:</h2>
 	<form action="pg-category">
 		<select name="choice">
@@ -20,7 +18,7 @@
 			<option value="Co-live">Co-live</option>
 		</select> <input type="submit" value="Search">
 	</form>
-	
+
 	<h2>Search by location:</h2>
 	<form action="pg-location">
 		<select name="choice">
@@ -30,5 +28,8 @@
 			<option value="Chennai">Chennai</option>
 		</select> <input type="submit" value="Search">
 	</form>
+
+	<h2>Paying Guests:</h2>
+	${payingGuests}
 </body>
 </html>

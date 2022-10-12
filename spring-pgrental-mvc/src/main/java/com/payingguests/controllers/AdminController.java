@@ -17,4 +17,13 @@ public class AdminController {
 		return "add-pg-form";
 	}
 	
+	@RequestMapping("updatePgForm")
+	public String showEditForm(Model model) {
+		return "edit-form";
+	}
+	
+	@RequestMapping("deletePgForm")
+	public String deletePayingGuest(Model model) {
+		return "delete-pg-form";
+	}
 }
